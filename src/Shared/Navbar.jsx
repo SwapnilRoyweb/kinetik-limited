@@ -7,21 +7,21 @@ import { BiSolidBusiness } from "react-icons/bi";
 const Navbar = () => {
 
     const navItems = <>
-        <li><Link><FaHome/>Home</Link></li>
+        <li><Link><FaHome />Home</Link></li>
         <li>
-            <Link><FaIndustry/>Industry</Link>
+            <Link><FaIndustry />Industry</Link>
             {/* <ul className="p-2">
                 <li><a>Submenu 1</a></li>
                 <li><a>Submenu 2</a></li>
             </ul> */}
         </li>
-        <li><Link><BiSolidBusiness/>Company</Link></li>
+        <li><Link><BiSolidBusiness />Company</Link></li>
     </>
 
     return (
         <div className='bg-black bg-opacity-20 p-2'>
             <div className='flex items-center justify-center md:justify-between gap-10 mx-5'>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-center'>
                     <img src={logo} alt="" className='h-16 w-16' />
                     <h1 className='text-3xl font-bold'><span className='text-red-800'>Kinetik</span> Limited</h1>
                 </div>
@@ -48,7 +48,13 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <button className='btn btn-warning btn-circle text-black text-2xl'><FaSearchengin/></button>
+                        <div className="form-control">
+                            <div className="input-group">
+                                <input type="text" placeholder="Search…" className="input input-bordered bg-black bg-opacity-50" />
+                                <button className='btn btn-square text-white text-2xl'><FaSearchengin /></button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
