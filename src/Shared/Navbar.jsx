@@ -19,7 +19,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className='bg-slate-100 bg-opacity-10 p-2 fixed top-0 left-0 right-0 z-10'>
+        <div className='bg-black bg-opacity-10 p-2 fixed top-0 left-0 right-0 z-10'>
             <div className='flex items-center justify-center md:justify-between gap-10 mx-5 max-h-10'>
                 <div className='flex items-center justify-center'>
                     <img src={logo} alt="" className='h-10 w-10' />
@@ -51,7 +51,7 @@ const Navbar = () => {
                         <div className="form-control">
                             <div className="input-group">
                                 <div className='flex items-center justify-center'>
-                                    <input type="text" placeholder="Search…" className="input input-bordered bg-black bg-opacity-50 text-white" />
+                                    <input type="text" placeholder="Search…" className="input input-bordered bg-black bg-opacity-50 text-white hidden md:flex" />
                                     <button className='btn btn-square text-white text-2xl'><FaSearchengin /></button>
                                 </div>
                             </div>
