@@ -19,7 +19,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className='bg-black bg-opacity-10 p-2 fixed top-0 left-0 right-0 z-10'>
+        <div className='bg-white bg-opacity-20 p-2 fixed top-0 left-0 right-0 z-10'>
             <div className='flex items-center justify-center md:justify-between gap-10 mx-5 max-h-10'>
                 <div className='flex items-center justify-center'>
                     <img src={logo} alt="" className='h-10 w-10' />
@@ -37,7 +37,7 @@ const Navbar = () => {
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black bg-opacity-20 rounded-box w-52">
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white bg-opacity-20 rounded-box w-52">
                                 {navItems}
                             </ul>
                         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
                             <div className="input-group">
                                 <div className='flex items-center justify-center'>
                                     <input type="text" placeholder="Search…" className="input input-bordered bg-black bg-opacity-50 text-white hidden md:flex" />
-                                    <button className='btn btn-square text-white text-2xl'><FaSearchengin /></button>
+                                    <button className='btn bg-black bg-opacity-80 hover:bg-opacity-100 btn-square text-white text-2xl'><FaSearchengin /></button>
                                 </div>
                             </div>
                         </div>
