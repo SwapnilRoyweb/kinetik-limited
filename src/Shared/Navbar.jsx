@@ -19,10 +19,10 @@ const Navbar = () => {
     </>
 
     return (
-        <div className='bg-black bg-opacity-20 p-2'>
-            <div className='flex items-center justify-center md:justify-between gap-10 mx-5'>
+        <div className='bg-slate-100 bg-opacity-10 p-2 fixed top-0 left-0 right-0 z-10'>
+            <div className='flex items-center justify-center md:justify-between gap-10 mx-5 max-h-10'>
                 <div className='flex items-center justify-center'>
-                    <img src={logo} alt="" className='h-16 w-16' />
+                    <img src={logo} alt="" className='h-10 w-10' />
                     <h1 className='text-3xl font-bold'><span className='text-red-800'>Kinetik</span> Limited</h1>
                 </div>
                 <div>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
             </div>
             <hr className='mt-3 mx-5' />
-            <div className='mx-5'>
+            <div className='mx-5 h-16'>
                 <div className="navbar bg-transparent">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -41,17 +41,19 @@ const Navbar = () => {
                                 {navItems}
                             </ul>
                         </div>
-                    </div>
-                    <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal px-1">
-                            {navItems}
-                        </ul>
+                        <div className="hidden lg:flex">
+                            <ul className="menu menu-horizontal px-1">
+                                {navItems}
+                            </ul>
+                        </div>
                     </div>
                     <div className="navbar-end">
                         <div className="form-control">
                             <div className="input-group">
-                                <input type="text" placeholder="Search…" className="input input-bordered bg-black bg-opacity-50" />
-                                <button className='btn btn-square text-white text-2xl'><FaSearchengin /></button>
+                                <div className='flex items-center justify-center'>
+                                    <input type="text" placeholder="Search…" className="input input-bordered bg-black bg-opacity-50 text-white" />
+                                    <button className='btn btn-square text-white text-2xl'><FaSearchengin /></button>
+                                </div>
                             </div>
                         </div>
 
