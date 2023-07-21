@@ -2,11 +2,11 @@ import React from 'react';
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import './Banner.css';
-import product1 from '../../assets/Products/coordinate-measuring-machine-probes.jpg'
-import product2 from '../../assets/Products/IMG20211228141537.jpg'
-import product3 from '../../assets/Products/IMG20220707122306.jpg'
-import product4 from '../../assets/Products/IMG_20211124_202119.jpg'
-import product5 from '../../assets/Products/IMG_20220718_211057.jpg'
+import image1 from '../../assets/Banner/cutting-metal-with-plasma-equipment-plant.jpg'
+import image2 from '../../assets/Banner/portrait-young-worker-hard-hat-large-metalworking-plant.jpg'
+import image3 from '../../assets/Banner/portrait-young-worker-large-metalworking-plant.jpg'
+import image4 from '../../assets/Banner/welding-work-with-metal-construction-busy-metal-factory.jpg'
+import image5 from '../../assets/Banner/worker-operating-industrial-machine-metal-workshop.jpg'
 
 
 const WheelControls = (slider) => {
@@ -78,19 +78,19 @@ const Banner = () => {
     return (
         <div ref={sliderRef} className="keen-slider min-h-screen w-fit">
             <div className="keen-slider__slide number-slide1">
-                <img src={product1} alt="" className='w-full min-h-screen' />
+                <img src={image1} alt="" className='w-full min-h-screen' />
             </div>
             <div className="keen-slider__slide number-slide2">
-                <img src={product2} alt="" className='w-full min-h-screen' />
+                <img src={image2} alt="" className='w-full min-h-screen' />
             </div>
             <div className="keen-slider__slide number-slide3">
-                <img src={product3} alt="" className='w-full min-h-screen' />
+                <img src={image3} alt="" className='w-full min-h-screen' />
             </div>
             <div className="keen-slider__slide number-slide4">
-                <img src={product4} alt="" className='w-full min-h-screen' />
+                <img src={image4} alt="" className='w-full min-h-screen' />
             </div>
             <div className="keen-slider__slide number-slide5">
-                <img src={product5} alt="" className='w-full min-h-screen' />
+                <img src={image5} alt="" className='w-full min-h-screen' />
             </div>
         </div>
     );
