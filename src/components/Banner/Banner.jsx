@@ -76,23 +76,26 @@ const Banner = () => {
     )
 
     return (
-        <div ref={sliderRef} className="keen-slider min-h-screen w-fit">
-            <div className="keen-slider__slide number-slide1">
-                <img src={image1} alt="" className='w-full min-h-screen' />
+
+            <div ref={sliderRef} className="keen-slider max-h-screen w-fit">
+                <div className="keen-slider__slide number-slide1">
+                    <img src={image1} alt="" className='w-full min-h-screen' />
+                </div>
+                <div className="keen-slider__slide number-slide2">
+                    <img src={image2} alt="" className='w-full min-h-screen' />
+                </div>
+                <div className="keen-slider__slide number-slide3">
+                    <img src={image3} alt="" className='w-full min-h-screen' />
+                </div>
+                <div className="keen-slider__slide number-slide4">
+                    <img src={image4} alt="" className='w-full min-h-screen' />
+                </div>
+                <div className="keen-slider__slide number-slide5">
+                    <img src={image5} alt="" className='w-full min-h-screen' />
+                </div>
             </div>
-            <div className="keen-slider__slide number-slide2">
-                <img src={image2} alt="" className='w-full min-h-screen' />
-            </div>
-            <div className="keen-slider__slide number-slide3">
-                <img src={image3} alt="" className='w-full min-h-screen' />
-            </div>
-            <div className="keen-slider__slide number-slide4">
-                <img src={image4} alt="" className='w-full min-h-screen' />
-            </div>
-            <div className="keen-slider__slide number-slide5">
-                <img src={image5} alt="" className='w-full min-h-screen' />
-            </div>
-        </div>
+            
+
     );
 };
 
